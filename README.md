@@ -46,9 +46,6 @@ The results are shown below.
 | HASC | 473.140 | 6.346 | 375.330 | **3.118** |
 
 
-## Contact
-- Yuang Shi, yuangshi@u.nus.edu
-
 ## Reference
 [1] S. Liu, M. Yamada, N. Collier, and M. Sugiyama, “Change-pointdetection in time-series data by relative density-ratio estimation,” Neural Networks, vol. 43, pp. 72–83, 2013.
 
@@ -57,6 +54,10 @@ The results are shown below.
 [3] J. Kim, J. Kim, H. L. T. Thu, and H. Kim, “Long short term memoryrecurrent neural network classifier for intrusion detection,” in 2016 International Conference on Platform Technology and Service (PlatCon). IEEE, 2016, pp. 1–5.
 
 [4] C. Yin, Y. Zhu, J. Fei, and X. He, “A  deep  learning  approach  forintrusion detection using recurrent neural networks,” IEEE Access, vol. 5,pp. 21 954–21 961, 2017
+
+## Contact
+
+- Yuang Shi, yuangshi@u.nus.edu
 
 ## Acknowledgement
 
