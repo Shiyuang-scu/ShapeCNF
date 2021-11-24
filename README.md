@@ -12,7 +12,7 @@ Our contributions are as follows.
 - ShapeCNF is a simple model with only a few hundreds parameters which is order of magnitudes smaller than deep learning models like Long Short-Term Memory (LSTM). Thus, the proposed method is fast enough to be utilized in both online and offline scenarios.
 
 <p align="center">
-<img src="./architecture.pdf" height=350>
+<img src="./architecture.png" height=350>
 </p>
 
 ## Results
