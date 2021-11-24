@@ -2,7 +2,7 @@
 
 This repository is the official implementation of our paper "ShapeCNF: Conditional Neural Field with Shape-Based Features for Change-Point Detection".
 
-ShapeCNF is a simple, fast, and accurate change-point detection method which uses shape-based features to model the patterns and a conditional neural field to model the temporal correlations among the time regions. It's the improved version in [Shape-CD: Change-Point Detection in Time-Series Data with Shapes and Neurons](https://arxiv.org/abs/2007.11985).
+ShapeCNF is a simple, fast, and accurate change-point detection method which uses shape-based features to model the patterns and a conditional neural field to model the temporal correlations among the time regions. It's the improved version of [Shape-CD: Change-Point Detection in Time-Series Data with Shapes and Neurons](https://arxiv.org/abs/2007.11985).
 
 Our contributions are as follows.
 - We propose a hybrid model consisting of shape-based features learning (dynamic time warping, DTW) and conditional neural field (CNF) for change-point detection. ShapeCNF first captures the dissimilarity scores as features between adjacent time intervals. Then, in order to learn temporal dependencies, these features are non-linearly combined by CNF to model the non-linear relationship of the dissimilarities from different time-series dimensions. 
@@ -25,8 +25,22 @@ We evaluate our approach on two human acticity time-series datasets, which are o
 We compare ShapeCNF with three representative baselines: 
 - RuLSIF [1], a non-parametric unsupervised method, which directly estimates the density ratio and compares the change score obtained using $\alpha$-relative PE (Pearson divergence) to detect a change.
 - KL-CPD [2], a recent kernel learning method where the data-specific kernels help in identifying changes.
-- long short-term memory (LSTM) [3,4], a variant neural network architecture widely used for sequence labelling and classification tasks. Here, we use LSTM as a supervised binary classifier (as done in, e.g., [4]) to label the time segments as “change” or “no change”.
+- long short-term memory (LSTM) [3, 4], a variant neural network architecture widely used for sequence labelling and classification tasks. Here, we use LSTM as a supervised binary classifier (as done in, e.g., [4]) to label the time segments as “change” or “no change”.
 
+The results are shown below.
+
+**Table 1** AUC of different methods for change-point detection
+| Dataset | RuLSIF | LSTM | KL-CPD | ShapeCNF |
+| :---: | :---: | :---: | :---: | :---: |
+| ExtraSensory | 0.7863 | 0.6158 | 0.6104 | **0.8834** |
+| HASC | 0.6332 | 0.4579 | 0.6490 | **0.7627** |
+
+
+**Table 2** Computational time for per-segment (milisecond)
+| Dataset | RuLSIF | LSTM | KL-CPD | ShapeCNF |
+| :---: | :---: | :---: | :---: | :---: |
+| ExtraSensory | 474.941 | 9.616 | 394.331 | **4.221** |
+| HASC | 473.140 | 6.346 | 375.330 | **3.118** |
 
 ## Contact
 - Yuang Shi, yuangshi@u.nus.edu
