@@ -45,6 +45,14 @@ The results are shown below.
 | ExtraSensory | 474.941 | 9.616 | 394.331 | **4.221** |
 | HASC | 473.140 | 6.346 | 375.330 | **3.118** |
 
+## Dependencies
+TBC
+
+## Training & Evaluating
+TBC
+
+## Pre-trained Model
+TBC
 
 ## Reference
 [1] S. Liu, M. Yamada, N. Collier, and M. Sugiyama, “Change-pointdetection in time-series data by relative density-ratio estimation,” Neural Networks, vol. 43, pp. 72–83, 2013.
