@@ -23,27 +23,26 @@ We evaluate our approach on two human acticity time-series datasets, which are o
 - [HASC](http://hasc.jp/hc2011)
 
 We compare ShapeCNF with three representative baselines: 
-- RuLSIF [1], a non-parametric unsupervised method, which directly estimates the density ratio and compares the change score obtained using $\alpha$-relative PE (Pearson divergence) to detect a change.
-- KL-CPD [2], a recent kernel learning method where the data-specific kernels help in identifying changes.
-- Long short-term memory (LSTM) [3, 4], a variant neural network architecture widely used for sequence labelling and classification tasks. Here, we use LSTM as a supervised binary classifier (as done in, e.g., [4]) to label the time segments as “change” or “no change”.
+- RuLSIF [1].
+- KL-CPD [2].
+- Long short-term memory (LSTM) [3, 4].
 
 The results are shown below.
 
-<center>
+
 **Table 1** AUC of different methods for change-point detection
 | Dataset | RuLSIF | LSTM | KL-CPD | ShapeCNF |
 | :---: | :---: | :---: | :---: | :---: |
 | ExtraSensory | 0.7863 | 0.6158 | 0.6104 | **0.8834** |
 | HASC | 0.6332 | 0.4579 | 0.6490 | **0.7627** |
-</center>
-  
-<center>
+
+
 **Table 2** Computational time for per-segment (milisecond)
 | Dataset | RuLSIF | LSTM | KL-CPD | ShapeCNF |
 | :---: | :---: | :---: | :---: | :---: |
 | ExtraSensory | 474.941 | 9.616 | 394.331 | **4.221** |
 | HASC | 473.140 | 6.346 | 375.330 | **3.118** |
-</center>
+
 
 ## Contact
 - Yuang Shi, yuangshi@u.nus.edu
