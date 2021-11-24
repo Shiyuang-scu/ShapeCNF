@@ -60,4 +60,4 @@ The results are shown below.
 
 ## Acknowledgement
 
-This work is supervised by Prof Ooi Wei Tsang in National University of Singapore.
+This work is supervised by Prof. Ooi Wei Tsang in Non-Graduate Non-Exchange (NGNE) Programme, National University of Singapore.
