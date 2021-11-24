@@ -20,10 +20,12 @@ Our contributions are as follows.
 We evaluate our approach on two human acticity time-series datasets, which are often considered for change point detection.
 
 - [ExtraSensory](http://extrasensory.ucsd.edu): The ExtraSensory dataset is a dataset for behavioral context recognition in-the-wild from mobile sensors. It consists of 300,000 recorded minutes of sensor data collected from smart-phones and smartwatch of 60 subjects in the wild. The sensors include accelerometer, gyroscope, magnetometer, audio, location, ambient light, etc. In this paper, we only use tri-axial accelerometer data from smartwatch. The accelerometer data is 3-dimensional sampled in 40Hz. It has totally 308,306 examples with 7 primary labels and 56 secondary labels.
-- 
 - [HASC](http://hasc.jp/hc2011): The HASC dataset is the subset of the Human Activity Sensing Consortium (HASC) challenge 2011 dataset, which provides human activity data collected by portable three-axis accelerometers. We aim to find transition with the time-series data among 6 human activities: "stay", "walk", "jog", "skip", "stair up", "stair down".
 
-We compare ShapeCNF with three representative baselines: RuLSIF [1], KL-CPD [2], and long short-term memory (LSTM) [3,4]. RuLSIF is a non-parametric unsupervised method, which directly estimates the density ratio and compares the change score obtained using $\alpha$-relative PE (Pearson divergence) to detect a change. KL-CPD is a recent kernel learning method where the data-specific kernels help in identifying changes. This method has been shown to work in multiple real-world datasets as compared to its deep learning counterparts. LSTM is a variant neural network architecture widely used for sequence labelling and classification tasks. Here, we use LSTM as a supervised binary classifier (as done in, e.g., [4]) to label the time segments as “change” or “no change”.
+We compare ShapeCNF with three representative baselines: 
+- RuLSIF [1], a non-parametric unsupervised method, which directly estimates the density ratio and compares the change score obtained using $\alpha$-relative PE (Pearson divergence) to detect a change.
+- KL-CPD [2], a recent kernel learning method where the data-specific kernels help in identifying changes.
+- long short-term memory (LSTM) [3,4], a variant neural network architecture widely used for sequence labelling and classification tasks. Here, we use LSTM as a supervised binary classifier (as done in, e.g., [4]) to label the time segments as “change” or “no change”.
 
 
 ## Contact
