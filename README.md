@@ -15,6 +15,8 @@ Our contributions are as follows.
 <img src="./architecture.png" height=350>
 </p>
 
+The architecture of ShapeCNF. It has two major components: 1) shape-based feature extractor and 2) conditional neural field. The shape-based feature extractor takes data segments as input, and encodes each segment as a fixed-length vector representation (i.e shape-based feature) by using dynamic time warping. The CRF component takes the set of shape-based features as input and models their temporal correlations. Then CRF component outputs the marginal distribution of each data segment being normal or change point given the set of shape-based features.
+
 ## Results
 
 We evaluate our approach on two human acticity time-series datasets, which are often considered for change point detection.
