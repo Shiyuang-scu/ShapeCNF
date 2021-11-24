@@ -5,7 +5,7 @@ This repository is the official implementation of our paper "ShapeCNF: Condition
 ShapeCNF is a simple, fast, and accurate change-point detection method which uses shape-based features to model the patterns and a conditional neural field to model the temporal correlations among the time regions. It's the improved version in [Shape-CD: Change-Point Detection in Time-Series Data with Shapes and Neurons](https://arxiv.org/abs/2007.11985).
 
 Our contributions are as follows.
-- We propose a hybrid model consisting of shape-based features learning (dynamic time warping, DTW) \cite{berndt1994using} and conditional neural field (CNF) \cite{peng2009conditional} for change-point detection. ShapeCNF first captures the dissimilarity scores as features between adjacent time intervals. Then, in order to learn temporal dependencies, these features are non-linearly combined by CNF to model the non-linear relationship of the dissimilarities from different time-series dimensions. 
+- We propose a hybrid model consisting of shape-based features learning (dynamic time warping, DTW) and conditional neural field (CNF) for change-point detection. ShapeCNF first captures the dissimilarity scores as features between adjacent time intervals. Then, in order to learn temporal dependencies, these features are non-linearly combined by CNF to model the non-linear relationship of the dissimilarities from different time-series dimensions. 
 
 - Extensive experiments on two highly dynamic and complex human activity datasets, i.e. ExtraSensory and HASC, have shown that our method outperforms the state-of-the-art methods for change-point detection, demonstrating its superiority both in terms of speed and accuracy on non-stationary, complex, and highly varying time-series data.
 
@@ -19,7 +19,7 @@ Our contributions are as follows.
 
 We evaluate our approach on two human acticity time-series datasets, which are often considered for change point detection.
 
-- [ExtraSensory](http://extrasensory.ucsd.edu): The ExtraSensory dataset is a dataset for behavioral context recognition in-the-wild from mobile sensors. It consists of 300,000 recorded minutes of sensor data collected from smart-phones and smartwatch of 60 subjects in the wild. The sensors include accelerometer, gyroscope, magnetometer, audio, location, ambient light, etc. In this paper, we only use tri-axial accelerometer data from smartwatch. The accelerometer data is 3-dimensional sampled in 40Hz. It has totally 308,306 examples with 7 primary labels and 56 secondary labels. Figure \ref{experiment:fig:acc_example} shows one example in accelerometer data.
+- [ExtraSensory](http://extrasensory.ucsd.edu): The ExtraSensory dataset is a dataset for behavioral context recognition in-the-wild from mobile sensors. It consists of 300,000 recorded minutes of sensor data collected from smart-phones and smartwatch of 60 subjects in the wild. The sensors include accelerometer, gyroscope, magnetometer, audio, location, ambient light, etc. In this paper, we only use tri-axial accelerometer data from smartwatch. The accelerometer data is 3-dimensional sampled in 40Hz. It has totally 308,306 examples with 7 primary labels and 56 secondary labels.
 - 
 - [HASC](http://hasc.jp/hc2011): The HASC dataset is the subset of the Human Activity Sensing Consortium (HASC) challenge 2011 dataset, which provides human activity data collected by portable three-axis accelerometers. We aim to find transition with the time-series data among 6 human activities: "stay", "walk", "jog", "skip", "stair up", "stair down".
 
@@ -31,8 +31,11 @@ We compare ShapeCNF with three representative baselines: RuLSIF [1], KL-CPD [2],
 
 ## Reference
 [1] S. Liu, M. Yamada, N. Collier, and M. Sugiyama, “Change-pointdetection in time-series data by relative density-ratio estimation,” Neural Networks, vol. 43, pp. 72–83, 2013.
+
 [2] W.-C. Chang, C.-L. Li, Y. Yang, and B. P ́oczos, “Kernel  change-point  detection  with  auxiliary  deep  generative  models,”arXiv preprint arXiv:1901.06077, 2019.
+
 [3] J. Kim, J. Kim, H. L. T. Thu, and H. Kim, “Long short term memoryrecurrent neural network classifier for intrusion detection,” in 2016 International Conference on Platform Technology and Service (PlatCon). IEEE, 2016, pp. 1–5.
+
 [4] C. Yin, Y. Zhu, J. Fei, and X. He, “A  deep  learning  approach  forintrusion detection using recurrent neural networks,” IEEE Access, vol. 5,pp. 21 954–21 961, 2017
 
 ## Acknowledgement
