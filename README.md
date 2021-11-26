@@ -54,6 +54,9 @@ TBC
 ## Pre-trained Model
 TBC
 
+## Citation
+TBC
+
 ## Reference
 [1] S. Liu, M. Yamada, N. Collier, and M. Sugiyama, “Change-pointdetection in time-series data by relative density-ratio estimation,” Neural Networks, vol. 43, pp. 72–83, 2013.
 
