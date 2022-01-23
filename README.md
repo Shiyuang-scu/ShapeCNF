@@ -1,6 +1,6 @@
 # ShapeCNF: Conditional Neural Field with Shape-Based Features for Change-Point Detection
 
-This repository is the official implementation of our paper "ShapeCNF: Conditional Neural Field with Shape-Based Features for Change-Point Detection".
+This repository is the official implementation of our paper "Shape-Based Conditional Neural Field forWrist-Worn Change-Point Detection".
 
 ShapeCNF is a simple, fast, and accurate change-point detection method which uses shape-based features to model the patterns and a conditional neural field to model the temporal correlations among the time regions. It's the improved version of [Shape-CD: Change-Point Detection in Time-Series Data with Shapes and Neurons](https://arxiv.org/abs/2007.11985).
 
@@ -69,7 +69,3 @@ TBC
 ## Contact
 
 - Yuang Shi, yuangshi@u.nus.edu
-
-## Acknowledgement
-
-This work is supervised by Prof. Ooi Wei Tsang in Non-Graduate Non-Exchange (NGNE) Programme, National University of Singapore.
