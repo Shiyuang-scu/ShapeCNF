@@ -1,4 +1,4 @@
-# ShapeCNF: Conditional Neural Field with Shape-Based Features for Change-Point Detection
+# Shape-Based Conditional Neural Field for Wrist-Worn Change-Point Detection
 
 This repository is the official implementation of our paper "Shape-Based Conditional Neural Field for Wrist-Worn Change-Point Detection".
 
