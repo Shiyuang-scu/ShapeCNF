@@ -47,7 +47,7 @@ The results are shown below.
 
 
 ## Citation
-**Shi, Yuang,** Varsha Suresh, and Wei Tsang Ooi. “Shape-Based Conditional Neural Field for Wrist- Worn Change-Point Detection.” *2022 IEEE International Conference on Pervasive Computing and Communications Workshops (PerCom Workshops)*. IEEE, 2022.
+- Shi, Yuang, Varsha Suresh, and Wei Tsang Ooi. “Shape-Based Conditional Neural Field for Wrist- Worn Change-Point Detection.” *2022 IEEE International Conference on Pervasive Computing and Communications Workshops (PerCom Workshops)*. IEEE, 2022.
 
 ## Reference
 [1] S. Liu, M. Yamada, N. Collier, and M. Sugiyama, “Change-pointdetection in time-series data by relative density-ratio estimation,” Neural Networks, vol. 43, pp. 72–83, 2013.
