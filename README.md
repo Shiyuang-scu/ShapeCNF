@@ -45,14 +45,6 @@ The results are shown below.
 | ExtraSensory | 474.941 | 9.616 | 394.331 | **4.221** |
 | HASC | 473.140 | 6.346 | 375.330 | **3.118** |
 
-## Dependencies
-TBC
-
-## Training & Evaluating
-TBC
-
-## Pre-trained Model
-TBC
 
 ## Citation
 TBC
